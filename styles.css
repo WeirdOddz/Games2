@@ -10,7 +10,11 @@
     background-color: darkgray;
     font-size: 40px;
 }
-
+.navbar .taskbar .aboutButton {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: darkgray;
+    font-size: 40px;
+}
 body {
     background-image: url("https://www.crushpixel.com/big-static14/preview4/seamless-pattern-with-christmas-candy-1654250.jpg");
 }
