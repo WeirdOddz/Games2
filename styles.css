@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Puddles&display=swap');
+
 
 .navbar .taskbar {
     font-family: 'Ubuntu', sans-serif;
@@ -30,4 +32,17 @@
     font-size: 20px;
     text-align: center;
     color: tomato;
+}
+
+.cookerHeader {
+    font-family: 'Rubik Puddles', cursive;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+}
+
+.cookerText {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    text-align: center;
 }
