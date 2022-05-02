@@ -54,3 +54,17 @@
     text-align: center;
     color: white;
 }
+
+.download {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+
+.modMakerHeader {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: black;
+}
