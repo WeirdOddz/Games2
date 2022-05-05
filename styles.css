@@ -68,3 +68,18 @@
     text-align: center;
     color: black;
 }
+
+.modGeneratorDescClass {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 28px;
+    text-align: center;
+    color: black;
+}
+
+.modGeneratorDescClass .frameworkDownload {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 28px;
+    text-align: center;
+    color: black;
+    border-style: dotted;
+}
