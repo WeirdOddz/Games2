@@ -7,6 +7,14 @@
     <title>Software Inc Modding Forum (unofficial) : Thread</title>
     <script src="app.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <script src="data.js"></script>
+    <script>
+        console.log(threads);
+        var id=window.location.search.slice(1);
+        var thread = threads.find(t => t.id == id);
+        console.log(thread);
+        var html = ``
+    </script>
     <style>
         a {
             text-decoration: none;
