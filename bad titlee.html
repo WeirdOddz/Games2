@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bad mrbreast title generator thing</title>
+    <style>
+        .center {
+            text-align: center;
+        }
+    </style>
+    <script>
+        keywords = {
+            moneypool:[
+                "$5,000",
+                "$1,000",
+                "$3,000",
+                "$10,000",
+                "$50,000",
+                "$100,000",
+                "$500,000",
+                "$1,000,000"
+            ],
+            badpeople:[
+                "gambling addicts",
+                "drug dealers",
+                "terrorists",
+                "human traffickers",
+                "racists",
+                "the taliban",
+                "fortnite kids",
+                "rich white people"
+            ],
+            violentpeople:[
+                "the taliban",
+                "racist",
+                "terrorist"
+            ],
+            violentpeople2:[
+                "the taliban",
+                "racists",
+                "terrorists"
+            ],
+            number:[
+                "100",
+                "1,000",
+                "10,000"
+            ],
+            tragicevents:[
+                "school shooting",
+                "terrorist attack",
+                "nuclear warfare",
+                "missile attacks"
+            ],
+            basetitles:[
+                "I gave <moneypool> to <badpeople>",
+                "ULTIMATE <moneypool> <violentpeople> BATTLE ROYALE",
+                "I paid <moneypool> to <violentpeople2> so they can kill <number> people",
+                "Last one to die in <tragicevents> wins <moneypool>",
+                "Person who can kill the most people in a <tragicevents> wins <moneypool>"
+            ]
+        }
+        function Generate() {
+            base = keywords.basetitles[Math.floor(Math.random()*keywords.basetitles.length)]
+            array = base.split(' ')
+            console.log(array)
+            function Loop(item, index) {
+                if (item.startsWith("<") && item.endsWith(">")) {
+                    console.log(item)
+                    a = item.replace("<", "")
+                    b = a.replace(">", "")
+                    table = keywords[b]
+                    obj = table[Math.floor(Math.random()*table.length)]
+                    base.replace(item,obj)
+                    array[index] = obj
+                    console.log(obj)
+                }
+            }
+            result = ""
+            array.forEach(element => {
+                result = result + element + " "
+            });
+            console.log(array)
+
+            array.forEach(Loop)
+            
+            document.getElementById("result").innerText = array.join(" ")
+
+            
+        }
+    </script>
+</head>
+<body>
+    <h1 class="center">bad mrbreast title generator</h1>
+    <br>
+    <button style="position: absolute; left: 50%; transform: translateX(-50%);" onclick="Generate()">generate an offensive title</button>
+    <br>
+    <p id="result" class="center">{title goes here}</p>
+    <br>
+    <br>
+    <h2 class="center">some results may be offensive to others</h2>"
+</body>
+</html>
